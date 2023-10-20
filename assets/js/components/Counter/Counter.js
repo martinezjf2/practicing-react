@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 export default function Counter() {
 	return (
@@ -7,14 +8,18 @@ export default function Counter() {
 				0
 			</div>
 			<div className="buttons" style={styleButtons}>
-				<div className="minus" style={styleButton}>
-					{' '}
-					-{' '}
-				</div>
-				<div className="plus" style={styleButton}>
-					{' '}
-					+{' '}
-				</div>
+				<Button
+					action="minus"
+					text="-"
+					hoverColor="red"
+					backgrounColor="white"
+				/>
+				<Button
+					action="plus"
+					text="+"
+					hoverColor="purple"
+					backgrounColor="white"
+				/>
 			</div>
 		</div>
 	);
@@ -33,15 +38,6 @@ const styleNumber = {
 	fontSize: '2rem',
 	fontWeight: '900',
 	textAlign: 'center'
-};
-const styleButton = {
-	width: '50%',
-	border: '3px solid black',
-	padding: '20px',
-	fontSize: '2rem',
-	fontWeight: '900',
-	textAlign: 'center',
-	cursor: 'pointer'
 };
 
 const styleButtons = {
