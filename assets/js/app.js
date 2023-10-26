@@ -8,7 +8,7 @@ export default function App() {
 	return (
 		<div className="container">
 			<h1>{name}</h1>
-			<Counter />
+			<Counter status="manual" />
 		</div>
 	);
 }
