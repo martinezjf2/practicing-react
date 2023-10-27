@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Counter from './components/Counter/Counter';
+import Immutable from './components/Immutable/Immutable';
 
 export default function App() {
 	const [name, setName] = useState('Jeffrey');
@@ -8,7 +9,8 @@ export default function App() {
 	return (
 		<div className="container">
 			<h1>{name}</h1>
-			<Counter status="manual" />
+			{/* <Counter status="manual" /> */}
+			<Immutable />
 		</div>
 	);
 }
