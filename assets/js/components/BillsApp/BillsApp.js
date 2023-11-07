@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import AllBills from './AllBills';
+import FloatingMenu from './FloatingMenu';
 
 export default function BillsApp() {
 	const [status, setStatus] = useState('manual');
@@ -9,6 +10,7 @@ export default function BillsApp() {
 		<div id="BillsApp">
 			<Header />
 			<AllBills />
+			<FloatingMenu />
 		</div>
 	);
 }
