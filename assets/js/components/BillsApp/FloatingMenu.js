@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function FloatingMenu() {
+export default function FloatingMenu({ onActive }) {
 	return (
 		<nav id="FloatingMenu">
 			<div className="link">
@@ -33,7 +33,7 @@ export default function FloatingMenu() {
 
 			<div className="link">
 				<div className="add-button">
-					<div className="icon">
+					<div className="icon" onClick={() => onActive()}>
 						<i className="fas fa-plus" />
 					</div>
 				</div>
