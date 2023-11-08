@@ -10,6 +10,7 @@ export default function BillsApp() {
 		<div id="BillsApp">
 			<Header />
 			<AllBills />
+			<div className="content-background"></div>
 			<FloatingMenu />
 		</div>
 	);
